@@ -1,0 +1,46 @@
+.footer__address {
+    margin-right: 70px;
+  }
+
+
+.footer__list {
+    list-style: none;
+     }
+
+.footer__item {
+      margin-bottom: 9px;
+      &:last-child {
+        margin-bottom: 0px;}
+    }
+  
+
+.footer__link-map,
+.footer__link {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 1.71;
+      letter-spacing: 0.03em;
+      color: var(--white-color);
+      transition: color var(--animation);
+      }
+
+.footer__link-map {
+  color: var(--header-bg-color);
+  transition: color var(--animation);
+  &:hover, &:focus{
+        color: var(--akcent-color);
+    }
+}
+  
+.footer__link {
+    color: rgba(255, 255, 255, 0.6);
+    transition: color var(--animation);
+    &:hover, &:focus {
+        color: var(--akcent-color);
+    }
+  }
+      
+  
+    
+  

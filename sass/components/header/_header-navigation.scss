@@ -1,0 +1,31 @@
+.site-nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  .site-nav__item {
+   margin-right: 50px;
+
+   &:last-child {
+    margin-right: 0;
+  }
+  }
+  
+
+  
+  .site-nav__link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: var(--title-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    transition: color var(--animation);
+
+    &:hover, &:focus {
+      color: var(--akcent-color);
+    }
+  }
+  

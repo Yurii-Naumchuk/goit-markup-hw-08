@@ -1,0 +1,48 @@
+// VARIABLES
+@import "./utils/variables";
+// Non-Visiable
+@import "./utils/non-visiable";
+//current
+@import "./utils/current";
+// base
+@import "./components/base/base";
+@import "./components/base/reset";
+//_components
+@import "./components/components";
+
+// HEADER
+@import "./components/header/header-general";
+@import "./components/header/logo";
+@import "./components/header/header__logo";
+@import "./components/header/header-navigation";
+@import "./components/header/header-contacts";
+// HERO
+@import "./components/hero/hero-general";
+@import "./components/hero/hero-title";
+@import "./components/hero/hero-button";
+//advantages
+@import "./components/advantages";
+//activities
+@import "./components/activities";
+//Team
+@import "./components/team";
+//clients
+@import "./components/clients";
+//footer
+@import "./components/footer/footer-general";
+@import "./components/footer/footer-logo";
+@import "./components/footer/footer-contacts";
+@import "./components/footer/footer-join";
+@import "./components/footer/footer-subscribe";
+//portfolio
+@import "./components/portfolio/portfolio-buttons";
+@import "./components/portfolio/portfolio-cards";
+//modal-window
+@import "./components/modal-window/backdrop";
+@import "./components/modal-window/close-button";
+@import "./components/modal-window/window";
+
+
+
+
+

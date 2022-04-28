@@ -1,0 +1,46 @@
+.site-contact {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+  
+  .site-contact__item {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-right: 50px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  
+ 
+  
+  .site-contact__icon {
+    fill: currentColor;
+    margin-right: 10px;
+  }
+  
+  .site-contact__link {
+    color: var(--main-text-color);
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    transition: color var(--animation);
+
+    &:hover,
+    &:focus {
+      color: var(--akcent-color);
+    }
+  }
+    
+ 
+  

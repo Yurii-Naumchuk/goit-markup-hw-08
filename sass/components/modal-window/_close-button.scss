@@ -1,0 +1,26 @@
+.modal-btn {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+  
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+  
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: var(--header-bg-color);
+    box-sizing: border-box;
+    cursor: pointer;
+
+    &:hover .modal-btn-icon,
+    &:focus .modal-btn-icon {
+      fill: var(--akcent-color);}
+    }
+  
+   .modal-btn-icon {
+         fill: #000000;
+         transition: fill var(--animation);
+    }
