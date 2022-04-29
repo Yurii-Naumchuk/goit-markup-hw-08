@@ -1,24 +1,47 @@
+// кнопки меню/закрыть на моб версии
 .menu-btn {
-    display: block;
+    position: relative;
+
+    display: inline-block;
+    justify-content: center;
     width: 40px;
     height: 40px;
+
     background-color: transparent;
     border: transparent;
     outline: transparent;
     padding: 0;
+    z-index: 99;
+
+    &:hover, 
+    &:focus {
+        fill: var(--akcent-color);
+    }
 
     @media screen and (min-width: 768px) {
-    display: none;}
-
-    &__icon {
-      width: 40px;
-      height: 40px;
-      fill: #212121;
-      &-close {
-          opacity: 0;
+        display: none;
       }
-      &-open {
-        opacity: 1; }
-
+    
+      &__icon {
+        width: 44px;
+        height: 44px;
+    
+        &-open {
+          opacity: 1;
+          fill: #ffffff;
         }
+    
+        &-close {
+          opacity: 0;
+        }
+      }
     }
+
+    .menu-btn.is-active .menu-btn__icon-open {
+        opacity: 0;
+      }
+      
+      .menu-btn.is-active .menu-btn__icon-close {
+        opacity: 1;
+      }
+
