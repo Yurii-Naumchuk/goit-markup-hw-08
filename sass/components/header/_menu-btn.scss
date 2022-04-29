@@ -13,35 +13,44 @@
     padding: 0;
     z-index: 99;
 
-    &:hover, 
-    &:focus {
-        fill: var(--akcent-color);
-    }
-
-    @media screen and (min-width: 768px) {
+        @media screen and (min-width: 768px) {
         display: none;
       }
     
       &__icon {
-        width: 44px;
-        height: 44px;
+        width: 40px;
+        height: 40px;
+        fill: #212121;
     
         &-open {
-          opacity: 1;
-          fill: #ffffff;
+          display: block;
+          
+          
         }
     
         &-close {
-          opacity: 0;
-        }
+          display: none;
+          }
       }
     }
 
+    
+
     .menu-btn.is-active .menu-btn__icon-open {
-        opacity: 0;
+        display: none;
       }
       
       .menu-btn.is-active .menu-btn__icon-close {
-        opacity: 1;
+        display: block;
       }
 
+      .menu-btn__icon-open:hover,
+      .menu-btn__icon-open:focus
+       {
+          fill: var(--akcent-color);
+      }
+      .menu-btn__icon-close:hover,
+      .menu-btn__icon-close:focus
+       {
+        fill: var(--akcent-color);
+      }
