@@ -1,10 +1,13 @@
-.footer__address {
-  @media screen and(min-width:768px) and(max-width:1199px) {
-    margin-right: 165px;
-    text-align: center;
-  }
+.footer-address-box {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-right: 70px;
+        flex-grow: 1;
+    }
+   
 }
-
 
 .footer__list {
     list-style: none;
@@ -51,9 +54,4 @@
     transition: color var(--animation);
     &:hover, &:focus {
         color: var(--akcent-color);
-    }
-  }
-      
-  
-    
-  
+    } }
