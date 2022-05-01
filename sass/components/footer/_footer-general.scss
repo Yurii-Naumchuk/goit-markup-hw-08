@@ -4,6 +4,18 @@
     padding-bottom: 60px;
     }
     .footer__container {
-      display: flex;
-      align-items: baseline;
+      @media screen and (min-width: 1200px) {
+          display: flex;
+          align-items: baseline;
       }
+     
+  }
+  .footer-box {
+    @media screen and(min-width:768px) {
+        display: flex;
+        margin-bottom: 60px;
+      }
+      @media screen and(min-width:768px) and(max-width:1199px) {
+        justify-content: center;
+      }
+    }

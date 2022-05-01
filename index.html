@@ -68,7 +68,7 @@
         <!--Основний контент сторінки-->
         <main>
              <!-- Секція Герой (Замовити послугу)-->
-             <section class="hero">
+             <section class="hero  hero-image">
                 <div class="container">
                      <h1 class="hero__title" >Эффективные решения для вашего бизнеса</h1>
                      <button data-modal-open class="hero_button button" type="button">Заказать услугу</button>
@@ -116,38 +116,62 @@
                 </div>
             </section>  
             <!--Чим ми займаємось-->
-            <!-- <section class="activities section">
+            <section class="activities section">
                 <div class="container">
                     <h2 class="activities__title">Чем мы занимаемся</h2>
                          <ul class="activities__list list">
                             <li class="activities__item">
                                 <div class="activities__box">
-                                <img class="activities__img"  src="./images/img-1.jpg" alt="Человек работают за компьютером, в редакторе HTML" width="370" height="294">
+                                <!-- <img class="activities__img"  src="./images/img-1.jpg" alt="Человек работают за компьютером, в редакторе HTML" width="370" height="294"> -->
+                                <picture class="activities__img">
+                                    <source srcset="./images/activities/actv-img-1.jpg    1x,
+                                                    ./images/activities/actv-img-1@2x.jpg 2x"
+                                            media="(min-width:1200px)"
+                                            type="image/jpg"
+                                    />
+                                <img src="./images/activities/actv-img-1.jpg" alt="Пример1" />
+                                </picture>
                                 <h3 class="activities__label">Десктопные приложения</h3>
                                 </div>
                             </li>
                             <li class="activities__item"> 
                                 <div class="activities__box">
-                                <img class="activities__img" src="./images/img-2.jpg" alt="Человек с телефоном в руках возле ноутбука" width="370" height="294">
+                                    <picture class="activities__img">
+                                        <source srcset="./images/activities/actv-img-2.jpg    1x,
+                                                        ./images/activities/actv-img-2@2x.jpg 2x"
+                                                media="(min-width:1200px)"
+                                                type="image/jpg"
+                                        />
+                                    <img src="./images/activities/actv-img-2.jpg" alt="Пример2"/>
+                                    </picture>
                                 <h3 class="activities__label">Мобильные приложения</h3>
                                 </div>
                             </li>
                             <li class="activities__item"> 
                                 <div class="activities__box">
-                                <img class="activities__img" src="./images/img-3.jpg" alt="Человек с планшетом в руках, выбирает цвет" width="370" height="294">
+                                    <picture class="activities__img">
+                                        <source srcset="./images/activities/actv-img-3.jpg    1x,
+                                                        ./images/activities/actv-img-3@2x.jpg 2x"
+                                                media="(min-width:1200px)"
+                                                type="image/jpg"
+                                        />
+                                    <img src="./images/activities/actv-img-3.jpg" alt="Пример3" />
+                                    </picture>
                                 <h3 class="activities__label">Дизайнерские решения</h3>
                                 </div>
                             </li>
                         </ul>
                 </div>
-            </section> -->
+            </section>
             <!--Наша команда-->
             <section class="team section">
                 <div class="container">
                     <h2 class="team__title" >Наша команда</h2>
                         <ul class="team__list list">
                             <li class="team__item">
-                                <img class="team__image" src="./images/img-4.jpg" alt="Игорь Демьяненко" width="270" height="260">
+                                <!-- <img class="team__image" src="./images/img-4.jpg" alt="Игорь Демьяненко" width="270" height="260"> -->
+                                <img class="team__image" srcset="./images/team/img1.jpg 1x, ./images/team/img1@2x.jpg 2x"
+                                        src="./images/team/img1.jpg" alt="Игорь Демьяненко">
                                 <div class="team__text"><h3 class="team__name">Игорь Демьяненко</h3>
                                     <p  class="team__position" lang="en">Product Designer</p>
                                     <ul class="socials list">
@@ -175,7 +199,8 @@
                                 </div>    
                             </li>
                             <li class="team__item">
-                                <img class="team__image" src="./images/img-5.jpg" alt="Ольга Репина" width="270" height="260">
+                                <img class="team__image" srcset="./images/team/img2.jpg 1x, ./images/team/img2@2x.jpg 2x"
+                                        src="./images/team/img2.jpg" alt="Ольга Репина">
                                 <div class="team__text"><h3 class="team__name">Ольга Репина</h3>
                                     <p class="team__position" lang="en">Frontend Developer</p>
                                     <ul class="socials list">
@@ -203,7 +228,8 @@
                                 </div>
                             </li>
                             <li class="team__item">
-                                <img class="team__image" src="./images/img-6.jpg" alt="Николай Тарасов" width="270" height="260">
+                                <img class="team__image" srcset="./images/team/img3.jpg 1x, ./images/team/img3@2x.jpg 2x"
+                                        src="./images/team/img3.jpg" alt="Николай Тарасов">
                                 <div class="team__text"><h3 class="team__name">Николай Тарасов</h3>
                                     <p class="team__position" lang="en">Marketing</p>
                                     <ul class="socials list">
@@ -231,7 +257,9 @@
                                 </div>
                             </li>
                             <li class="team__item">
-                                <img class="team__image" src="./images/img-7.jpg" alt="Михаил Ермаков" width="270" height="260">
+                                <img class="team__image" srcset="./images/team/img4.jpg 1x, ./images/team/img4@2x.jpg 2x"
+                                        src="./images/team/img4.jpg" alt="Михаил Ермаков"
+                                        >
                                 <div class="team__text"><h3 class="team__name">Михаил Ермаков</h3>
                                     <p class="team__position" lang="en">UI Designer</p>
                                     <ul class="socials list">
@@ -262,7 +290,7 @@
                 </div>
             </section>
             <!--постійні клієнти-->
-            <!-- <section class="clients section">
+            <section class="clients section">
                 <div class="container">
                   <h2 class="clients__title">Постоянные клиенты</h2>
                   <ul class="clients__list list">
@@ -310,12 +338,13 @@
                       </li>
                   </ul>
                 </div>
-              </section> -->
+              </section>
         </main>
         <!-- Підвальчик-->
-           <!-- <footer class="footer">
-                <div class="footer__container container"> 
-                    <address class="footer__address">
+           <footer class="footer">
+                <div class="footer__container container">
+                <div class="footer-box">
+                      <address class="footer__address">
                         <a class="logo footer__logo" href="./index.html">Web<span class="logo__text--white">Studio</span>
                         </a>
                         <ul class="footer__list list">
@@ -349,8 +378,10 @@
                         </li>
                     </ul>
                     </div>
+                </div>
                     <div class="footer-subscribe">
                         <h3 class="footer-subscribe__title">Подпишитесь на рассылку</h3>
+
                         <form class="footer-subscribe__form">
                             <input class="footer-subscribe__input" type="email" name="email" placeholder="E-mail" autocomplete="off">
                             <button class="footer-subscribe__button button" type="submit"> 
@@ -359,13 +390,14 @@
                                     <use href="./images/icons.svg#send"> </use>
                                 </svg>
                             </button>
+
                         </form>
                     </div>
                  </div>
-            </footer> -->
+            </footer>
             <!--модальне вікно-->
     
-    <!-- <div class="backdrop is-hidden " data-modal>
+    <div class="backdrop is-hidden " data-modal>
         <div class="modal-wrapper">
             <button data-modal-close class="modal-btn" type="button"> 
                 <svg class="modal-btn-icon" width="18" height="18" >
@@ -425,7 +457,7 @@
                         </label>
                         <button class="form-button" type="submit">Отправить</button>
                      </div>
-    </div>   -->
+    </div>  
     <!-- МОБІЛЬНЕ МЕНЮ -->
     <div class="mobile-overlay" data-menu>
         <div class="mobile-menu">

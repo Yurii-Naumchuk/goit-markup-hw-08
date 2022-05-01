@@ -1,6 +1,9 @@
 .footer__address {
-    margin-right: 70px;
+  @media screen and(min-width:768px) and(max-width:1199px) {
+    margin-right: 165px;
+    text-align: center;
   }
+}
 
 
 .footer__list {
@@ -8,10 +11,20 @@
      }
 
 .footer__item {
+  margin-bottom: 8px;
+  &:last-child {
+      margin-bottom: 0;
+  }
+  @media screen and (max-width: 1199px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+  }
+  @media screen and (min-width: 1200px) {
       margin-bottom: 9px;
-      &:last-child {
-        margin-bottom: 0px;}
-    }
+  }
+}
   
 
 .footer__link-map,
