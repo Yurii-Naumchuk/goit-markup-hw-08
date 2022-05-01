@@ -3,7 +3,6 @@
   padding-top: 60px;
   padding-bottom: 60px;
   }
-}
     .footer__container {
       @media screen and (min-width: 1200px) {
         display: flex;
@@ -24,12 +23,5 @@
   @media screen and (min-width: 768px) and (max-width: 1199px) {
       margin-bottom: 60px;
   }
-  
-}
+ }
 
-.footer-join {
-  @media screen and (max-width: 767px) {
-    margin-bottom: 60px;
-    }
-
-}
