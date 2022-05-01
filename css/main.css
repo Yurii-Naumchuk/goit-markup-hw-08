@@ -1067,14 +1067,7 @@ img {
   .footer-box {
     display: flex;
     align-items: baseline;
-    flex-grow: 1;
     justify-content: space-around;
-  }
-}
-
-@media screen and (min-width: 768px) and (min-width: 1200px) {
-  .footer-box {
-    margin-right: 93px;
   }
 }
 
@@ -1110,13 +1103,18 @@ img {
 @media screen and (min-width: 1200px) {
   .form {
     margin-right: 70px;
-    flex-grow: 1;
   }
 }
 
 @media screen and (max-width: 767px) {
   .footer-address-box {
     margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-address-box {
+    margin-right: 70px;
   }
 }
 
@@ -1181,6 +1179,12 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-join {
+    margin-right: 93px;
+  }
+}
+
 .footer-join__title {
   font-family: Roboto;
   font-style: normal;
@@ -1239,7 +1243,7 @@ img {
   .form {
     display: flex;
     justify-content: center;
-    margin-right: 0;
+    margin-right: auto;
   }
 }
 
@@ -1293,6 +1297,12 @@ img {
   transition: color var(--animation);
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-subscribe__input {
+    margin-left: 123px;
+  }
+}
+
 .footer-subscribe__input:hover, .footer-subscribe__input:focus {
   border-color: var(--akcent-color);
 }
@@ -1307,12 +1317,11 @@ img {
 
 .footer-subscribe__button {
   display: flex;
-  width: 200px;
+  min-width: 200px;
   height: 50px;
   padding: 10px 29px;
   border: 1px solid transparent;
   border-radius: 6px;
-  transition: box-shadow var(--animation);
 }
 
 @media screen and (max-width: 1199px) {
@@ -1322,13 +1331,9 @@ img {
   }
 }
 
-.footer-subscribe__button:hover, .footer-subscribe__button:focus {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-
 .footer-subscribe__icon {
+  fill: #ffffff;
   margin-left: 10px;
-  fill: var(--header-bg-color);
 }
 
 .filter-list {
@@ -1588,6 +1593,12 @@ img {
   margin-bottom: 12px;
 }
 
+@media screen and (min-width: 1200px) {
+  .form-title {
+    line-height: 1.15;
+  }
+}
+
 .form {
   width: 448px;
   margin-right: auto;
@@ -1712,6 +1723,12 @@ textarea {
   line-height: 1.71;
   letter-spacing: 0.03em;
   margin-bottom: 30px;
+}
+
+@media screen and (max-width: 479px) {
+  .checkbox-lable {
+    font-size: 10px;
+  }
 }
 
 .checkbox {
