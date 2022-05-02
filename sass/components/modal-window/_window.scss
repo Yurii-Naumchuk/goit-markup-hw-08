@@ -9,9 +9,8 @@
         padding-left: 40px;
         padding-right: 40px;
       
-        width: 528px;
-        height: 581px;
-        
+        width: 450px;
+                
         background-color: var(--header-bg-color);
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
           0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -21,20 +20,20 @@
         transition: opacity var(--animation), 
         transform var(--animation);
         
-        @media screen and(max-width:1199px) {
-          max-width: 450px;
-          max-height: 609px;
-        }
-        @media screen and(max-width:767px) {
-          max-width: 450px;
-          max-height: 609px;
-        }
-        @media screen and(max-width:479px) {
-          max-width: 100%;
-          max-height: 100%;
-        }
-      
-        }
+        @media screen and (max-width: 479px) {
+          max-width: 290px;
+          min-height: 609px;
+            }
+      @media screen and (min-width: 480px) and (max-width: 1199px) {
+        max-width: 450px;
+        min-height: 609px;
+      }
+      @media screen and (min-width: 1200px) {
+          
+          width: 528px;
+          min-height: 581px;
+      }
+  }
                        
         .form-title {
           font-family: 'Roboto';
@@ -50,13 +49,7 @@
             }
       
           }
-      
-          .form {
-          width: 448px;
-          margin-right: auto;
-          margin-left: auto;
-          }
-      
+                     
           .form-field {
             position: relative;
             margin-bottom: 10px;
@@ -85,6 +78,7 @@
       
             .form-input {
               box-sizing: border-box;
+              width: 100%;
               height: 40px;
               margin: 0; 
               padding-left: 42px;
@@ -194,10 +188,12 @@
             
             letter-spacing: 0.03em;
             margin-bottom: 30px;
-            @media screen and (max-width: 479px){
-              font-size: 10px;}
+            @media screen and (max-width: 479px)
+            {font-size: 6px;}   
+            @media screen and (min-width: 480px) and (max-width: 1199px)
+           { font-size: 12px;}
           }
-      
+
           .checkbox{
             -webkit-appearance: none;
             appearance: none;
@@ -212,6 +208,9 @@
             border: 2px solid #2a2a2a;
             border-radius: 4px;
             fill: var(--white-text-color);
+            @media screen and (max-width: 1199px)
+            {
+              margin-left: 0px;}
               }
         .checkbox:checked ~ .checkbox-icon-svg{
             fill: #FFFFFF ;
@@ -224,6 +223,9 @@
         .modal-link {
           margin-left: 5px;
           color: var(--akcent-color);
+          @media screen and (max-width: 479px){
+            margin-left: 2px;}
+          
         }
         
         .policy{

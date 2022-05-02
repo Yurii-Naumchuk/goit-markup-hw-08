@@ -8,12 +8,16 @@
     background-color: rgba(0, 0, 0, 0.2);
     
     opacity: 1;
+    visibility: visible;
+    pointer-events: initial;
     transition: opacity var(--animation),
     transform var(--animation);
+    z-index: 100;
     }
     
     .backdrop.is-hidden {
     opacity: 0;
     transform: scale(0);
     pointer-events: none;
+    visibility: hidden;
     }

@@ -152,6 +152,8 @@ img {
   .header__container {
     position: relative;
     justify-content: space-between;
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 }
 
@@ -495,10 +497,18 @@ img {
   display: flex;
   align-items: center;
   font-weight: 500;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
   transition: color var(--animation);
+}
+
+@media screen and (min-width: 1200px) {
+  .site-contact__link {
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 
 .site-contact__link:hover, .site-contact__link:focus {
@@ -591,24 +601,35 @@ img {
 .hero__title {
   font-weight: 900;
   text-align: center;
-  font-size: 26px;
-  line-height: 1.61;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-text-color);
+  font-size: 26px;
+  line-height: 1.61;
   margin: auto;
 }
 
 @media screen and (max-width: 479px) {
   .hero__title {
     width: 100%;
-    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .hero__title {
+    width: 360px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero__title {
+    width: 360px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero__title {
-    max-width: 696px;
+    width: 698px;
     font-size: 44px;
     line-height: 1.36;
   }
@@ -649,13 +670,7 @@ img {
 @media screen and (min-width: 1200px) {
   .advantages {
     padding-top: 94px;
-    padding-bottom: 94px;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .advantages__list {
-    justify-content: center;
+    padding-bottom: 0px;
   }
 }
 
@@ -663,70 +678,47 @@ img {
   .advantages__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    margin: -15px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .advantages__list {
-    display: flex;
+    flex-wrap: nowrap;
   }
 }
 
-.advantages__card {
-  justify-content: center;
-  align-items: center;
-  background-color: #F5F4FA;
-  border-radius: 4px;
-  margin-bottom: 30px;
-}
-
-@media screen and (min-width: 0px) and (max-width: 767px) {
-  .advantages__card {
-    display: flex;
-    width: 100%;
-    height: 120px;
-    margin-top: 30px;
+@media screen and (max-width: 767px) {
+  .advantages__item {
+    max-width: 480px;
+  }
+  .advantages__item:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .advantages__card {
-    width: 354px;
-    height: 120px;
-    display: flex;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .advantages__card {
-    width: 270px;
-    height: 120px;
-    display: flex;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1199px) {
   .advantages__item {
-    width: 354px;
-    margin-right: 30px;
-  }
-  .advantages__item:nth-child(2) {
-    margin-right: 0px;
-  }
-  .advantages__item:last-child {
-    margin-right: 0px;
+    flex-basis: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .advantages__item {
-    width: 270px;
-    margin-right: 30px;
+    width: calc((100% - 8 * 15px) / 4);
+    margin: 15px;
   }
-  .advantages__item:last-child {
-    margin-right: 0px;
-  }
+}
+
+.advantages__card {
+  height: 120px;
+  background-color: #F5F4FA;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .advantages__title {
@@ -750,7 +742,16 @@ img {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-top: 0;
   margin-bottom: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .advantages__subject {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .advantages__text {
@@ -1067,7 +1068,14 @@ img {
   .footer-box {
     display: flex;
     align-items: baseline;
+    flex-grow: 1;
     justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .footer-box {
+    margin-right: 93px;
   }
 }
 
@@ -1078,6 +1086,7 @@ img {
 }
 
 .footer__logo {
+  display: block;
   margin-top: 0;
   margin-bottom: 20px;
 }
@@ -1095,18 +1104,6 @@ img {
 }
 
 @media screen and (max-width: 767px) {
-  .form {
-    margin-bottom: 60px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .form {
-    margin-right: 70px;
-  }
-}
-
-@media screen and (max-width: 767px) {
   .footer-address-box {
     margin-bottom: 60px;
   }
@@ -1115,10 +1112,13 @@ img {
 @media screen and (min-width: 1200px) {
   .footer-address-box {
     margin-right: 70px;
+    flex-grow: 1;
   }
 }
 
 .footer__list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -1179,12 +1179,6 @@ img {
   }
 }
 
-@media screen and (min-width: 1200px) {
-  .footer-join {
-    margin-right: 93px;
-  }
-}
-
 .footer-join__title {
   font-family: Roboto;
   font-style: normal;
@@ -1209,7 +1203,6 @@ img {
 .footer-join__list {
   display: flex;
   justify-content: center;
-  list-style: none;
 }
 
 .footer-join__item:not(:last-child) {
@@ -1240,10 +1233,10 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
-  .form {
+  .box-subscribe {
     display: flex;
     justify-content: center;
-    margin-right: auto;
+    margin-right: 0;
   }
 }
 
@@ -1287,20 +1280,14 @@ img {
 }
 
 .footer-subscribe__input {
-  min-width: 358px;
-  min-height: 50px;
+  width: 358px;
+  height: 50px;
   padding-left: 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: #2f303a;
   color: var(--header-bg-color);
   transition: color var(--animation);
-}
-
-@media screen and (min-width: 1200px) {
-  .footer-subscribe__input {
-    margin-left: 123px;
-  }
 }
 
 .footer-subscribe__input:hover, .footer-subscribe__input:focus {
@@ -1509,13 +1496,17 @@ img {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
+  visibility: visible;
+  pointer-events: initial;
   transition: opacity var(--animation), transform var(--animation);
+  z-index: 100;
 }
 
 .backdrop.is-hidden {
   opacity: 0;
   transform: scale(0);
   pointer-events: none;
+  visibility: hidden;
 }
 
 .modal-btn {
@@ -1552,8 +1543,7 @@ img {
   padding-top: 40px;
   padding-left: 40px;
   padding-right: 40px;
-  width: 528px;
-  height: 581px;
+  width: 450px;
   background-color: var(--header-bg-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -1561,24 +1551,24 @@ img {
   transition: opacity var(--animation), transform var(--animation);
 }
 
-@media screen and (max-width: 1199px) {
-  .modal-wrapper {
-    max-width: 450px;
-    max-height: 609px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .modal-wrapper {
-    max-width: 450px;
-    max-height: 609px;
-  }
-}
-
 @media screen and (max-width: 479px) {
   .modal-wrapper {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 290px;
+    min-height: 609px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .modal-wrapper {
+    max-width: 450px;
+    min-height: 609px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-wrapper {
+    width: 528px;
+    min-height: 581px;
   }
 }
 
@@ -1597,12 +1587,6 @@ img {
   .form-title {
     line-height: 1.15;
   }
-}
-
-.form {
-  width: 448px;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .form-field {
@@ -1629,6 +1613,7 @@ img {
 
 .form-input {
   box-sizing: border-box;
+  width: 100%;
   height: 40px;
   margin: 0;
   padding-left: 42px;
@@ -1727,7 +1712,13 @@ textarea {
 
 @media screen and (max-width: 479px) {
   .checkbox-lable {
-    font-size: 10px;
+    font-size: 6px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .checkbox-lable {
+    font-size: 12px;
   }
 }
 
@@ -1747,6 +1738,12 @@ textarea {
   fill: var(--white-text-color);
 }
 
+@media screen and (max-width: 1199px) {
+  .checkbox-icon-svg {
+    margin-left: 0px;
+  }
+}
+
 .checkbox:checked ~ .checkbox-icon-svg {
   fill: #FFFFFF;
   border-color: var(--akcent-color);
@@ -1758,6 +1755,12 @@ textarea {
 .modal-link {
   margin-left: 5px;
   color: var(--akcent-color);
+}
+
+@media screen and (max-width: 479px) {
+  .modal-link {
+    margin-left: 2px;
+  }
 }
 
 .policy {
